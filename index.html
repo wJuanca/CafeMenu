@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+    <title>Página de Café</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="icon/favicon.png" type="image/png">
+
+</head>
+
+<body>
+
+    <header>
+        <img class="logo-cafe" src="img/logo.png" alt="logo">
+        <h2>ESQUINA CAFÉ</h2>
+        <nav>
+            <ul>
+                <li><a href="javascript:location.href=location.href;">Inicio</a></li>
+                <li><a href="#">Caliente</a></li>
+                <li><a href="#">Frio</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main>
+        <section class="products">
+
+            <div class="product" onmouseover="darken(this)" onmouseout="undarken(this)" data-category="Caliente">
+                <div class="overlay"></div>
+                <div class="image-container">
+                    <img src="img/cafe1.png" alt="Producto 1" class="product-image">
+                    <ul class="ingredients hidden">
+                        <li class="ingrentes-titulo">Ingredientes:</li>
+                        <li>Café</li>
+                        <li>Cacao</li>
+                        <li>Canela</li>
+                        <li>Leche</li>
+                    </ul>
+                </div>
+                <div class="product-details">$55<br>Chicife</div>
+            </div>
+            
+            
+            <div class="product" onmouseover="darken(this)" onmouseout="undarken(this)" data-category="Caliente">
+                <div class="overlay"></div>
+                <div class="image-container">
+                    <img src="img/cafe2.png" alt="Producto 2" class="product-image">
+                    <ul class="ingredients hidden">
+                        <li class="ingrentes-titulo">Ingredientes:</li>
+                        <li>Café Molido</li>
+                        <li>Agua</li>
+                        <li>Azucar</li>
+                    </ul>
+                </div>
+                <div class="product-details">$40<br>Espresso</div>
+            </div>
+
+            <div class="product" onmouseover="darken(this)" onmouseout="undarken(this)"data-category="Caliente">
+                <div class="overlay"></div>
+                <div class="image-container">
+                    <img src="img/cafe3.png" alt="Producto 3" class="product-image">
+                    <ul class="ingredients hidden">
+                        <li class="ingrentes-titulo">Ingredientes:</li>
+                        <li>Café Fino</li>
+                        <li>Agua</li>
+                        <li>Azucar</li>
+                    </ul>
+                </div>
+                <div class="product-details">$35<br>Café Turco</div>
+            </div>
+
+            <div class="product" onmouseover="darken(this)" onmouseout="undarken(this)" data-category="Caliente" >
+                <div class="overlay"></div>
+                <div class="image-container">
+                    <img src="img/cafe4.png" alt="Producto 4" class="product-image">
+                    <ul class="ingredients hidden">
+                        <li class="ingrentes-titulo">Ingredientes:</li>
+                        <li>Café espresso</li>
+                        <li>Leche vaporizada</li>
+                        <li>Espuma de leche</li>
+                    </ul>
+                </div>
+                <div class="product-details">$60<br>Latte</div>
+            </div>
+        </section>
+
+
+        <section class="products">
+            <div class="product" onmouseover="darken(this)" onmouseout="undarken(this)" data-category="Caliente">
+                <div class="overlay"></div>
+                <div class="image-container">
+                    <img src="img/cafe5.png" alt="Producto 5" class="product-image">
+                    <ul class="ingredients hidden">
+                        <li class="ingrentes-titulo">Ingredientes:</li>
+                        <li>Café espresso</li>
+                        <li>Leche vaporizada</li>
+                    </ul>
+                </div>
+                <div class="product-details">$45<br>Flate White</div>
+            </div>
+
+            <div class="product" onmouseover="darken(this)" onmouseout="undarken(this)" data-category="Caliente">
+                <div class="overlay"></div>
+                <div class="image-container">
+                    <img src="img/cafe6.png" alt="Producto 6" class="product-image">
+                    <ul class="ingredients hidden">
+                        <li class="ingrentes-titulo">Ingrediente:</li>
+                        <li>Café caliente</li>
+                        <li>Whisky</li>
+                        <li>Azúcar</li>
+                        <li>Crema batida</li>
+                    </ul>
+                </div>
+                <div class="product-details">$35<br>Irish Coffee</div>
+            </div>
+
+            <div class="product" onmouseover="darken(this)" onmouseout="undarken(this)" data-category="Frio">
+                <div class="overlay"></div>
+                <div class="image-container">
+                    <img src="img/cafe7.png" alt="Producto 7" class="product-image">
+                    <ul class="ingredients hidden">
+                        <li class="ingrentes-titulo">Ingredientes:</li>
+                        <li>Café instantáneo</li>
+                        <li>Hielo</li>
+                        <li>Leche</li>
+                        <li>Azúcar (opcional)</li>
+                    </ul>
+                </div>
+                <div class="product-details">$80<br>Frappé</div>
+            </div>
+
+            <div class="product" onmouseover="darken(this)" onmouseout="undarken(this)" data-category="Caliente">
+                <div class="overlay"></div>
+                <div class="image-container">
+                    <img src="img/cafe8.png" alt="Producto 8" class="product-image">
+                    <ul class="ingredients hidden">
+                        <li class="ingrentes-titulo">Ingredientes:</li>
+                        <li>Café espresso</li>
+                        <li>Leche vaporizada</li>
+                        <li>Espuma de leche</li>
+                    </ul>
+                </div>
+                <div class="product-details">$50<br>Latte</div>
+            </div>
+        </section>
+
+
+        <section class="promo">
+            <div class="center-container">
+                <section class="promo">
+                    <div class="promo-container">
+                        <section class="promo">
+                            <div class="promo-content">
+                                <img class="promo-image" src="img/plantilla.png" alt="promo">
+                                <div class="promo-text">
+                                    <h2 class="mensaje-cafe">El Cafe</h2>
+                                    <p>El café fuerte me resucita, me causa un escozor,<br>
+                                        una carcoma singular, un dolor que no carece de placer. <br>
+                                        Más me gusta, entonces, sufrir que no sufrir.</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+
+
+        <section class="products">
+
+            <div class="product" onmouseover="darken(this)" onmouseout="undarken(this)" data-category="Frio">
+                <div class="overlay"></div>
+                <div class="image-container">
+                    <img src="img/cafe9.png" alt="Producto 9" class="product-image">
+                    <ul class="ingredients hidden">
+                        <li class="ingrentes-titulo">Ingredientes:</li>
+                        <li>Café espresso</li>
+                        <li>Leche fría</li>
+                        <li>Espuma de leche</li>
+                        <li>Hielo</li>
+                    </ul>
+                </div>
+                <div class="product-details">$80<br>Iced Cappuccino</div>
+            </div>
+
+            <div class="product" onmouseover="darken(this)" onmouseout="undarken(this)" data-category="Frio">
+                <div class="overlay"></div>
+                <div class="image-container">
+                    <img src="img/cafe10.png" alt="Producto 10" class="product-image">
+                    <ul class="ingredients hidden">
+                        <li class="ingrentes-titulo">Ingrediente:</li>
+                        <li>Café espresso</li>
+                        <li>Leche fría</li>
+                        <li>Hielo</li>
+                    </ul>
+                </div>
+                <div class="product-details">$90<br>Ice Latte</div>
+            </div>
+
+            <div class="product" onmouseover="darken(this)" onmouseout="undarken(this)" data-category="Frio">
+                <div class="overlay"></div>
+                <div class="image-container">
+                    <img src="img/cafe11.png" alt="Producto 11" class="product-image">
+                    <ul class="ingredients hidden">
+                        <li class="ingrentes-titulo">Ingredientes:</li>
+                        <li>Café greuso</li>
+                        <li>Nitrogeno</li>
+                        <li>Hielo</li>
+                    </ul>
+                </div>
+                <div class="product-details">$70<br>Nitro Café</div>
+            </div>
+
+            <div class="product" onmouseover="darken(this)" onmouseout="undarken(this)" data-category="Frio">
+                <div class="overlay"></div>
+                <div class="image-container">
+                    <img src="img/cafe12.png" alt="Producto 12" class="product-image">
+                    <ul class="ingredients hidden">
+                        <li class="ingrentes-titulo">Ingrediente:</li>
+                        <li>Café filtrado</li>
+                        <li>Agua caliente</li>
+                        <li>Endulzante</li>
+                    </ul>
+                </div>
+                <div class="product-details">$65<br>Coffee Tea</div>
+            </div>
+        </section>
+
+        <section class="products">
+
+            <div class="product" onmouseover="darken(this)" onmouseout="undarken(this)" data-category="Frio">
+                <div class="overlay"></div>
+                <div class="image-container">
+                    <img src="img/cafe13.png" alt="Producto 13" class="product-image">
+                    <ul class="ingredients hidden">
+                        <li class="ingrentes-titulo">Ingredientes</li>
+                        <li>Café espresso</li>
+                        <li>Leche fría</li>
+                        <li>Espuma de leche</li>
+                        <li>Hielo</li>
+                    </ul>
+                </div>
+                <div class="product-details">$75<br>Iced Cappuccino</div>
+            </div>
+
+            <div class="product" onmouseover="darken(this)" onmouseout="undarken(this)" data-category="Frio">
+                <div class="overlay"></div>
+                <div class="image-container">
+                    <img src="img/cafe14.png" alt="Producto 14" class="product-image">
+                    <ul class="ingredients hidden">
+                        <li class="ingrentes-titulo">Ingredientes:</li>
+                        <li>Café espresso</li>
+                        <li>Leche fría</li>
+                        <li>Hielo</li>
+                    </ul>
+                </div>
+                <div class="product-details">$85<br>Ice Latte</div>
+            </div>
+
+            <div class="product" onmouseover="darken(this)" onmouseout="undarken(this)" data-category="Frio">
+                <div class="overlay"></div>
+                <div class="image-container">
+                    <img src="img/cafe15.png" alt="Producto 15" class="product-image">
+                    <ul class="ingredients hidden">
+                        <li class="ingrentes-titulo">Ingredientes</li>
+                        <li>Leche caliente</li>
+                        <li>Café espresso</li>
+                        <li>Espuma de leche</li>
+                    </ul>
+                </div>
+                <div class="product-details">$65<br>Latte Macchiato</div>
+            </div>
+
+            <div class="product" onmouseover="darken(this)" onmouseout="undarken(this)" data-category="Caliente" data-category="Popular">
+                <div class="overlay"></div>
+                <div class="image-container">
+                    <img src="img/cafe16.png" alt="Producto 16" class="product-image">
+                    <ul class="ingredients hidden">
+                        <li class="ingrentes-titulo">Ingredientes:</li>
+                        <li>Café espresso</li>
+                        <li>Leche vaporizada</li>
+                    </ul>
+                </div>
+                <div class="product-details">$65<br>Café Latte</div>
+            </div>
+        </section>
+
+
+        <section class="cafe-estrella">
+            <h2 class="cafes">CAFÉS ESTRELLA</h2>
+            <div class="estrella">
+                <img src="img/estrella1.png" alt="Producto 7" class="product-image">
+                <div class="estrella-detalles">Beistegue Cafe</div>
+            </div>
+            <div class="estrella">
+                <img src="img/estreall2.png" alt="Producto 8" class="product-image">
+                <div class="estrella-detalles">Santa Fe</div>
+            </div>
+            <div class="estrella">
+                <img src="img/estrella3.png" alt="Producto 9" class="product-image">
+                <div class="estrella-detalles">Cafe Olé</div>
+            </div>
+            <p class="info-estrella">Bienvenido a nuestro café, un emblemático rincón
+                en el corazón de Tegucigalpa que lleva 50 años sirviendo a nuestros queridos clientes.
+                Desde nuestra apertura, nos hemos dedicado a ofrecer una experiencia única con cafés de la más alta calidad y pureza.
+                Nuestra historia se entrelaza con la de la ciudad, siendo testigos de innumerables momentos y creando un legado de excelencia en cada taza servida.
+            </p>
+        </section>
+
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="foto-text-container">
+                <img class="foto-footer" src="img/logo.png" alt="Imagen">
+                <div class="footer-text">
+                    <p>&copy; 2024 Esquina Café. <br>
+                        Todos los derechos reservados. <br>
+                        Desarrollado por Juan Turcios.
+                    </p></p>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="redes-footer">
+                    <h3>Redes</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/_juancat/" target="_blank">Instagram</a></li>
+                        <li><a href="https://x.com/wjuanca_" target="_blank" >Twitter</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100030712874363" target="_blank" >Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <a href="https://www.google.com/maps?q=Mall Premier Juticalpa" target="_blank">
+            <img class="ubi-icono" src="icon/ubicacion.png" alt="ubicacion">
+        </a>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

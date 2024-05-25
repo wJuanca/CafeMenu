@@ -1,0 +1,550 @@
+/* Estilos base Mobile First */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a67c52;
+    color: #000;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+}
+
+.logo-cafe {
+    width: 20%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+header h2 {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Aladin', cursive;
+    font-size: 30px;
+    color: #312017;
+    text-shadow: 1px 1px 2px black;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.product {
+    background-color: #8b6243;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+    perspective: 1000px;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-details {
+    padding: 10px;
+    color: #fff;
+    font-size: larger;
+}
+
+
+
+/* Promocion */
+.promo-container {
+    display: flex;
+    justify-content: center;
+}
+
+.promo {
+    position: relative;
+    padding: 20px;
+    color: #fff;
+}
+
+.promo-content {
+    display: flex;
+    align-items: center;
+}
+
+.promo-image {
+    max-width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.promo-text {
+    flex: 1;
+    text-align: left;
+}
+
+.promo-text h2 {
+    margin: 0;
+}
+
+.promo-text p {
+    margin: 10px 0;
+}
+
+
+
+/* PRODUCTOS ESTRELLA */
+.cafe-estrella {
+    text-align: center;
+    padding: 20px;
+}
+
+.info-estrella {
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+
+
+footer {
+    background-color: #543c2b;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact h3 {
+    margin: 0;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact ul li {
+    margin: 10px 0;
+}
+
+.contact ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-text {
+    margin-top: 20px;
+}
+
+.cafe-estrella {
+    font-size: larger;
+    color: #000;
+}
+
+.estrella-detalles{
+    font-family: 'Aladin', cursive;
+    font-size: 40px;
+}
+
+
+
+
+/* Efecto de zoom en los productos */
+.cafes {
+    font-size: 40px;
+    font-family: 'Aladin', cursive;
+    color: #312017;
+    font-size: 50px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.product-details {
+    color: #fff;
+    font-size: larger;
+}
+
+.foto-footer {
+    width: 100px;
+}
+
+
+
+
+/*Efecto de los ingredientes*/
+.product {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+.product:hover .product-image {
+    filter: brightness(70%) blur(2px);
+}
+
+
+.image-container {
+    position: relative;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: filter 0.3s ease;
+}
+
+.ingredients {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+}
+
+.ingredients li {
+    margin-bottom: 5px;
+}
+
+.product:hover .ingredients {
+    opacity: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+.ingrentes-titulo{
+    font-size: 30px;
+    font-family: 'Aladin', cursive;
+    color: aqua;
+    text-shadow: 1px 1px 2px black;
+}
+
+.mensaje-cafe{
+    color: #312017;
+    font-size: 50px;
+    font-family: 'Aladin', cursive;
+    text-shadow: 1px 1px 2px black;
+}
+
+.product-details {
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+/* Estilos para escritorio */
+@media only screen and (min-width: 768px) {
+
+
+    .logo-cafe {
+        width: 100px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        padding-right: 10px;
+    }
+    
+    header h2 {
+        display: inline-block;
+        vertical-align: middle;
+        font-family: 'Aladin', cursive;
+        font-size: 60px;
+        color: #312017;
+        text-shadow: 1px 1px 2px black;
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .product {
+        width: 20%;
+        margin-bottom: 20px;
+        padding: 10px;
+        text-align: center;
+        background-color: #8b6243;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .product-image {
+        width: 80%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .promo-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .promo {
+        position: relative;
+        padding: 20px;
+        color: #fff;
+    }
+
+    .promo-content {
+        display: flex;
+        align-items: center;
+    }
+
+    .promo-image {
+        max-width: 300px;
+        height: auto;
+        margin-right: 20px;
+    }
+
+    .promo-text {
+        flex: 1;
+        text-align: left;
+    }
+
+    .promo-text h2 {
+        margin: 0;
+    }
+
+    .promo-text p {
+        margin: 10px 0;
+        white-space: normal;
+    }
+
+    .cafe-estrella {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .cafe-estrella h2 {
+        grid-column: span 3;
+    }
+
+    .estrella {
+        margin: 0;
+    }
+
+    .estrella img {
+        width: 300px;
+        height: auto;
+        display: block;
+        margin: 0 auto 10px;
+    }
+
+
+    /*Efecto de zoom*/
+    
+    .estrella img {
+    transition: transform 0.6s ease;
+    }
+    .estrella:hover img {
+    transform: scale(1.1);
+    }
+
+    
+
+    .estrella .product-details {
+        font-size: 1em;
+    }
+
+    .info-estrella {
+        grid-column: span 3;
+        padding-top: 20px;
+        max-width: 600px; /* Puedes ajustar este valor según lo necesites */
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+    .product-details {
+        color: #fff;
+        font-size: 20px;
+        text-shadow: 1px 1px 2px black;
+        margin-bottom: 50px;
+    }
+
+    footer {
+        background-color: #543c2b;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .foto-text-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .foto-footer {
+        width: 80px;
+    }
+
+    .footer-text {
+        text-align: left;
+    }
+
+    .redes-footer {
+        text-align: right;
+        margin-left: auto;
+    }
+
+    .ubi-icono {
+        margin-left: 30px;
+    }
+
+
+
+
+
+
+
+
+
+
+    /* Ajuste de posición de ingredientes */
+    .product {
+        position: relative;
+    }
+    
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .product:hover .overlay {
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 1;
+    }
+    
+    .product:hover .product-image {
+        filter: brightness(70%) blur(2px);
+    }
+    
+    
+    .image-container {
+        position: relative;
+    }
+    
+    .product-image {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: filter 0.3s ease;
+    }
+    
+    .ingredients {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 1;
+        list-style: none;
+        padding: 0;
+    }
+    
+    .ingredients li {
+        margin-bottom: 5px;
+    }
+    
+    .product:hover .ingredients {
+        opacity: 1;
+    }
+    
+    .hidden {
+        display: none;
+    }
+
+    .ingredients{
+        font-size: large;
+    }
+
+    .ingrentes-titulo{
+        font-size: 30px;
+        font-family: 'Aladin', cursive;
+        color: aqua;
+        text-shadow: 1px 1px 2px black;
+    }
+
+    .mensaje-cafe{
+        color: #312017;
+        font-size: 50px;
+        font-family: 'Aladin', cursive;
+        text-shadow: 1px 1px 2px black;
+    }
+}
+
